@@ -27,7 +27,7 @@ class CompanyController extends AbstractController
      * @return JsonResponse
      * @throws NonUniqueResultException
      */
-    public function index(int $siren)
+    public function getSirenInformationAction(int $siren)
     {
         $company = $this->companyRepository->findLastUpdatedCompanyFromSiren($siren);
 
