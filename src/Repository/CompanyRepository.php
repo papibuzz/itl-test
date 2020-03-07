@@ -33,7 +33,6 @@ class CompanyRepository extends ServiceEntityRepository
             ->orderBy('c.date_maj', 'DESC')
             ->setMaxResults(1)
             ->getQuery()
-            ->getOneOrNullResult()
-            ;
+            ->getOneOrNullResult();
     }
 }
